@@ -15,6 +15,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/stream-local-files.png" alt="Stream local files" width="400"/>
 
+### [File Navigation](./src/app/file-navigation/page.tsx)
+
+<img src="/screenshots/file-navigation.png" alt="File Navigation" width="400"/>
+
 ## Learn More
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
