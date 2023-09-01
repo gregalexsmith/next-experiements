@@ -1,12 +1,4 @@
-import Link from 'next/link';
-
-const ListLink = ({ href, children }: { href: string; children: any }) => (
-  <li>
-    <Link href={href} className="text-blue-500 underline">
-      {children}
-    </Link>
-  </li>
-);
+import { ListLink } from '../components';
 
 export default function Home() {
   return (
@@ -15,6 +7,7 @@ export default function Home() {
       <ul className="flex flex-col gap-2 list-disc">
         <ListLink href="/stream-local-files">stream-local-files</ListLink>
         <ListLink href="/file-navigation">file-navigation</ListLink>
+        <ListLink href="/run-console">run-console</ListLink>
       </ul>
     </main>
   );
