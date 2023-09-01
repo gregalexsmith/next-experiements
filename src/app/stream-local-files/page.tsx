@@ -74,7 +74,6 @@ export default function SteamLocalFiles({
           <h2 className="text-lg mb-4">Files:</h2>
           {files.map((file) => (
             <li key={file.path}>
-              {/* The link should open the file in vscode */}
               <Link href={toSearchParam(file.path)}>{file.name}</Link>
             </li>
           ))}
