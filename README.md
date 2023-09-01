@@ -11,7 +11,7 @@ Experiements and learning around Next.js
 
 ## Experiments:
 
-### Stream local files
+### [Stream local files](./src/app/stream-local-files/page.tsx)
 
 <img src="/screenshots/stream-local-files.png" alt="Stream local files" width="400"/>
 
