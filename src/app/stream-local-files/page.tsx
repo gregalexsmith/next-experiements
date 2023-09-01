@@ -1,7 +1,7 @@
 import { readdirSync, statSync } from 'fs';
 import Link from 'next/link';
-import { headers } from 'next/headers';
 import path from 'path';
+import { usePathname } from '../../helpers';
 
 const paths = {
   ableton: process.env.PATH_ABLETON as string,
@@ -39,10 +39,7 @@ export default function SteamLocalFiles({
   params: { slug: string };
   searchParams: { [key: string]: string | undefined };
 }) {
-  const headersList = headers();
-  const pathname = headersList.get('x-invoke-path') || '';
-
-  console.log(pathname);
+  const pathname = usePathname();
 
   const files = findMp3Files(paths.ableton);
   const activeFile = searchParams.filepath;
