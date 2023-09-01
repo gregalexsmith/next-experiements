@@ -13,7 +13,7 @@ Experiements and learning around Next.js
 
 ### Stream local files
 
-- [x] [Stream local files](/screenshots/stream-local-files.png)
+<img src="/screenshots/stream-local-files.png" alt="Stream local files" width="400"/>
 
 ## Learn More
 
