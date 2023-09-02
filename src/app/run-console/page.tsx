@@ -3,17 +3,17 @@ import { execSync } from 'child_process';
 import { ListLink } from '../../components';
 
 const commands = [
-  { id: 1, command: 'ls -la' },
-  { id: 2, command: 'ls' },
+  { id: 1, command: 'ls' },
+  { id: 2, command: 'cat ./src/app/run-console/page.tsx' },
   { id: 3, command: 'npm run lint' },
   { id: 4, command: 'npm install' },
 ];
 
-// Executes a command in Node.js and returns the output
-const executeCommandAtPath = (path: string, command: string): string => {
+// Executes a shell command and returns the output
+const executeCommandAtPath = (command: string): string => {
   try {
     const output = execSync(command, {
-      cwd: path,
+      cwd: process.cwd(),
       encoding: 'utf-8',
     });
 
@@ -30,22 +30,21 @@ export default function StreamConsole({
   searchParams: { commandId: string | undefined };
 }) {
   const pathname = usePathname();
-  const output = searchParams.commandId
-    ? executeCommandAtPath(
-        process.cwd(),
-        commands.find(
-          (c) => c.id === parseInt(searchParams.commandId as string),
-        )?.command || '',
-      )
-    : '';
+  const id = parseInt(searchParams.commandId as string);
+  const command = commands.find((c) => c.id === id)?.command;
+  const output = command ? executeCommandAtPath(command) : '';
 
   return (
     <main className="min-h-screen px-8">
-      <section className="flex flex-col gap-4 mb-8">
+      <section className="flex flex-col gap-4 mb-4">
         <h1 className="text-lg">Run Console</h1>
+        <p>
+          Running shell command via Node.js and displaying the output in the
+          browser. (Another local-only experiment)
+        </p>
       </section>
 
-      <ul className="list-disc">
+      <ul className="list-disc ml-4 mb-8">
         {commands.map((command) => (
           <ListLink
             key={command.id}

@@ -19,6 +19,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/file-navigation.png" alt="File Navigation" width="400"/>
 
+### [Run Console](./src/app/run-console/page.tsx)
+
+<img src="/screenshots/run-console.gif" alt="Run Console" width="400"/>
+
 ## Learn More
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
