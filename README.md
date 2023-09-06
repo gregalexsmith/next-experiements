@@ -23,6 +23,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/run-console.gif" alt="Run Console" width="400"/>
 
+### [CRUD File DB](./src/app/crud-file-db/page.tsx)
+
+<img src="/screenshots/crud-file-db.gif" alt="CRUD File DB" width="400"/>
+
 ## Learn More
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
