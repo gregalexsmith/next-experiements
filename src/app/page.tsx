@@ -8,6 +8,7 @@ export default function Home() {
         <ListLink href="/stream-local-files">stream-local-files</ListLink>
         <ListLink href="/file-navigation">file-navigation</ListLink>
         <ListLink href="/run-console">run-console</ListLink>
+        <ListLink href="/crud-file-db">crud-file-db</ListLink>
       </ul>
     </main>
   );
