@@ -9,6 +9,7 @@ export default function Home() {
         <ListLink href="/file-navigation">file-navigation</ListLink>
         <ListLink href="/run-console">run-console</ListLink>
         <ListLink href="/crud-file-db">crud-file-db</ListLink>
+        <ListLink href="/code-metrics">code-metrics</ListLink>
       </ul>
     </main>
   );
