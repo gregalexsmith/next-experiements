@@ -31,6 +31,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/code-metrics.gif" alt="Code Metrics" width="400"/>
 
+### [Workers Basic](./src/app/workers-basic/page.tsx)
+
+<img src="/screenshots/workers-basic.gif" alt="Workers Basic" width="400"/>
+
 ## Learn More
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

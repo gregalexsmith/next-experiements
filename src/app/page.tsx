@@ -10,6 +10,7 @@ export default function Home() {
         <ListLink href="/run-console">run-console</ListLink>
         <ListLink href="/crud-file-db">crud-file-db</ListLink>
         <ListLink href="/code-metrics">code-metrics</ListLink>
+        <ListLink href="/workers-basic">workers-basic</ListLink>
       </ul>
     </main>
   );
