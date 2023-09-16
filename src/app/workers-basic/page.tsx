@@ -9,11 +9,7 @@ import {
   DeleteRepeatableJob,
   Refresh,
 } from './client';
-import { ReactNode } from 'react';
-
-const CodeInline = ({ children }: { children: ReactNode }) => (
-  <code className="bg-gray-200 rounded-md px-1">{children}</code>
-);
+import { CodeInline } from '../../components';
 
 const Stats = async () => {
   const queue = await getQueue();
