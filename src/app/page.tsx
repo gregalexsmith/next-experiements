@@ -5,13 +5,13 @@ export default function Home() {
     <main className="min-h-screen p-24">
       <h1 className="text-lg mb-4">Experiments:</h1>
       <ul className="flex flex-col gap-2 list-disc">
-        <ListLink href="/stream-local-files">stream-local-files</ListLink>
+        <ListLink href="/ai-basic">ai-basic</ListLink>
+        <ListLink href="/code-metrics">code-metrics</ListLink>
+        <ListLink href="/crud-file-db">crud-file-db</ListLink>
         <ListLink href="/file-navigation">file-navigation</ListLink>
         <ListLink href="/run-console">run-console</ListLink>
-        <ListLink href="/crud-file-db">crud-file-db</ListLink>
-        <ListLink href="/code-metrics">code-metrics</ListLink>
+        <ListLink href="/stream-local-files">stream-local-files</ListLink>
         <ListLink href="/workers-basic">workers-basic</ListLink>
-        <ListLink href="/ai-basic">ai-basic</ListLink>
       </ul>
     </main>
   );

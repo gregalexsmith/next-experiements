@@ -7,7 +7,7 @@ type Message = OpenAI.Chat.Completions.CreateChatCompletionRequestMessage;
 
 export const RSCExample = async () => {
   const messages: Message[] = [
-    { role: 'user', content: 'Hello, how are you?' },
+    { role: 'user', content: 'Can you explain react server components?' },
   ];
 
   const response = await openai.chat.completions.create({
@@ -20,8 +20,18 @@ export const RSCExample = async () => {
 
   return (
     <>
-      <p>Hello, how are you?</p>
-      <Tokens stream={stream} />
+      {messages.map((message, i) => (
+        <div key={i} className="flex gap-2">
+          <span className="text-gray-400">{message.role}:</span>
+          <span>{message.content}</span>
+        </div>
+      ))}
+      <div className="flex gap-2">
+        <span className="text-gray-400">Response:</span>
+        <span>
+          <Tokens stream={stream} />
+        </span>
+      </div>
     </>
   );
 };

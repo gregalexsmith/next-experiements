@@ -1,4 +1,4 @@
-import { Chat, Completion } from './client';
+import { Chat } from './client';
 import { RSCExample } from './server-example';
 
 export default async function AIBasic({
@@ -18,11 +18,6 @@ export default async function AIBasic({
       <section className="py-4">
         <h2 className="text-xl font-semibold mb-2">Chat</h2>
         <Chat />
-      </section>
-
-      <section className="py-4">
-        <h2 className="text-xl font-semibold mb-2">Completion</h2>
-        <Completion />
       </section>
 
       <section className="py-4">
