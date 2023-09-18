@@ -11,6 +11,7 @@ export default function Home() {
         <ListLink href="/crud-file-db">crud-file-db</ListLink>
         <ListLink href="/code-metrics">code-metrics</ListLink>
         <ListLink href="/workers-basic">workers-basic</ListLink>
+        <ListLink href="/ai-basic">ai-basic</ListLink>
       </ul>
     </main>
   );
