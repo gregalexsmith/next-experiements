@@ -11,9 +11,17 @@ Experiements and learning around Next.js
 
 ## Experiments:
 
-### [Stream local files](./src/app/stream-local-files/page.tsx)
+### [AI Basics](./src/app/ai-basics/page.tsx)
 
-<img src="/screenshots/stream-local-files.png" alt="Stream local files" width="400"/>
+<img src="/screenshots/ai-basics.gif" alt="AI Basics" width="400"/>
+
+### [Code Metrics](./src/app/code-metrics/page.tsx)
+
+<img src="/screenshots/code-metrics.gif" alt="Code Metrics" width="400"/>
+
+### [CRUD File DB](./src/app/crud-file-db/page.tsx)
+
+<img src="/screenshots/crud-file-db.gif" alt="CRUD File DB" width="400"/>
 
 ### [File Navigation](./src/app/file-navigation/page.tsx)
 
@@ -23,13 +31,9 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/run-console.gif" alt="Run Console" width="400"/>
 
-### [CRUD File DB](./src/app/crud-file-db/page.tsx)
+### [Stream local files](./src/app/stream-local-files/page.tsx)
 
-<img src="/screenshots/crud-file-db.gif" alt="CRUD File DB" width="400"/>
-
-### [Code Metrics](./src/app/code-metrics/page.tsx)
-
-<img src="/screenshots/code-metrics.gif" alt="Code Metrics" width="400"/>
+<img src="/screenshots/stream-local-files.png" alt="Stream local files" width="400"/>
 
 ### [Workers Basic](./src/app/workers-basic/page.tsx)
 
