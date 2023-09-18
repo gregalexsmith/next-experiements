@@ -11,9 +11,9 @@ Experiements and learning around Next.js
 
 ## Experiments:
 
-### [AI Basics](./src/app/ai-basics/page.tsx)
+### [AI Basic](./src/app/ai-basic/page.tsx)
 
-<img src="/screenshots/ai-basics.gif" alt="AI Basics" width="400"/>
+<img src="/screenshots/ai-basic.gif" alt="AI Basic" width="400"/>
 
 ### [Code Metrics](./src/app/code-metrics/page.tsx)
 
