@@ -27,6 +27,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/file-navigation.png" alt="File Navigation" width="400"/>
 
+### [RSC Streaming](./src/app/rsc-streaming/page.tsx)
+
+<img src="/screenshots/rsc-streaming.gif" alt="RSC Streaming" width="400"/>
+
 ### [Run Console](./src/app/run-console/page.tsx)
 
 <img src="/screenshots/run-console.gif" alt="Run Console" width="400"/>
