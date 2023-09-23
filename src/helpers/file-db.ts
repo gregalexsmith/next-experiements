@@ -3,6 +3,8 @@ import * as path from 'path';
 
 const fileName = 'db.json';
 
+export const createId = () => Math.floor(Math.random() * 100000);
+
 export class FileDB {
   filePath: string;
 
