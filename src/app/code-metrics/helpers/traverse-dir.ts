@@ -1,5 +1,5 @@
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
 import { minimatch } from 'minimatch';
 import { FileBase } from '../types';
 

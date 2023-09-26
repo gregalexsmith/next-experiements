@@ -1,7 +1,7 @@
 'use client';
 
-import { CodeInline } from '../../components';
 import { Button } from '@/components/ui/button';
+import { CodeInline } from '../../components';
 
 export default function Error({
   error,

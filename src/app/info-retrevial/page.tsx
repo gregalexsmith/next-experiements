@@ -1,8 +1,9 @@
 'use client';
-import { useForm } from 'react-hook-form';
-import { getSummary } from './actions';
 import { useState } from 'react';
+import { useChat } from 'ai/react';
+import { useForm } from 'react-hook-form';
 import ReactMarkdown from 'react-markdown';
+import { getSummary } from './actions';
 
 export default function Page() {
   return (
@@ -74,8 +75,6 @@ const WebsiteSourceForm = () => {
     </div>
   );
 };
-
-import { useChat } from 'ai/react';
 
 function Chat({
   webInfo,

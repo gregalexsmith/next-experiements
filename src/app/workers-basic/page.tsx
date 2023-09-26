@@ -1,6 +1,7 @@
 export const runtime = 'nodejs';
 
 import { CheckCircle, Clock, Info, Loader, XCircle } from 'lucide-react';
+import { CodeInline } from '../../components';
 import { getQueue } from '../../worker/queue';
 import {
   AddJob,
@@ -9,7 +10,6 @@ import {
   DeleteRepeatableJob,
   Refresh,
 } from './client';
-import { CodeInline } from '../../components';
 
 const Stats = async () => {
   const queue = await getQueue();

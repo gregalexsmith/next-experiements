@@ -1,8 +1,8 @@
 'use server';
 
 import { JobsOptions } from 'bullmq';
-import { getQueue } from '../../worker/queue';
 import { revalidatePath } from 'next/cache';
+import { getQueue } from '../../worker/queue';
 
 export const refresh = () => {
   revalidatePath('/workers-basic');

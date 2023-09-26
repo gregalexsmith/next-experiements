@@ -1,6 +1,6 @@
-import { OpenAI } from 'openai';
 import { OpenAIStream } from 'ai';
 import { Tokens } from 'ai/react';
+import { OpenAI } from 'openai';
 import { openai } from './helpers';
 
 type Message = OpenAI.Chat.Completions.CreateChatCompletionRequestMessage;

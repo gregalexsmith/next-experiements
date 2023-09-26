@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { FileBase, FileWithMetrics } from '../types';
-import { getNumberOfCommits } from './git-operations';
 import { getNumberOfDependentFiles } from './dependencies';
+import { getNumberOfCommits } from './git-operations';
 
 const processFileMetrics = async (filePath: string, allFiles: FileBase[]) => {
   const fileContents = fs.readFileSync(filePath, 'utf-8');

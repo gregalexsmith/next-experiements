@@ -1,9 +1,9 @@
 'use client';
 
 import 'react-data-grid/lib/styles.css';
+import { useMemo, useState } from 'react';
 import DataGrid, { Column, SortColumn } from 'react-data-grid';
 import { FileWithMetrics } from './types';
-import { useMemo, useState } from 'react';
 import './some.css';
 
 type Row = Pick<

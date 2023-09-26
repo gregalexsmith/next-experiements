@@ -1,9 +1,9 @@
 // https://codesandbox.io/s/pj7zjq?file=/src/App.js:0-2157
 'use client';
 import { useState, useTransition } from 'react';
-import { useControls } from 'leva';
-import { Canvas } from '@react-three/fiber';
 import { Center, Environment, OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { useControls } from 'leva';
 
 export function EnvBlur() {
   return (

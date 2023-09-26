@@ -1,7 +1,8 @@
-import { traverseDir } from './helpers/traverse-dir';
-import { processFiles } from './helpers/process-files';
-import { Grid } from './client';
 import path from 'path';
+import { Grid } from './client';
+import { processFiles } from './helpers/process-files';
+import { traverseDir } from './helpers/traverse-dir';
+
 
 const projectDirectory = path.join(process.cwd(), 'src');
 

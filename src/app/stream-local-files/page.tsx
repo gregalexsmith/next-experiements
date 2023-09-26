@@ -1,6 +1,6 @@
 import { readdirSync, statSync } from 'fs';
-import Link from 'next/link';
 import path from 'path';
+import Link from 'next/link';
 import { usePathname } from '../../helpers';
 
 const paths = {

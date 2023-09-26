@@ -1,6 +1,6 @@
-import { usePathname } from '../../helpers';
 import { execSync } from 'child_process';
 import { ListLink } from '../../components';
+import { usePathname } from '../../helpers';
 
 const commands = [
   { id: 1, command: 'ls' },

@@ -1,8 +1,8 @@
 'use server';
-import pw from 'playwright';
+import { chromium } from 'playwright';
 
 const getWebData = async (url: string) => {
-  const browser = await pw.chromium.launch({
+  const browser = await chromium.launch({
     headless: true,
   });
 
