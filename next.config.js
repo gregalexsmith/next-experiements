@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
-  transpilePackages: ['three'],
+  transpilePackages: ['three', 'lucide-react'],
 };
 
 export default nextConfig;
