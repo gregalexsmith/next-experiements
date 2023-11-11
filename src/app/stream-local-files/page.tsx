@@ -1,7 +1,6 @@
 import { readdirSync, statSync } from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { usePathname } from '../../helpers';
 
 const paths = {
   ableton: process.env.PATH_ABLETON as string,
@@ -33,14 +32,14 @@ const findMp3Files = (directory: string): Mp3File[] => {
   return mp3Files;
 };
 
+const pathname = '/stream-local-files';
+
 export default function SteamLocalFiles({
   searchParams,
 }: {
   params: { slug: string };
   searchParams: { [key: string]: string | undefined };
 }) {
-  const pathname = usePathname();
-
   const files = findMp3Files(paths.ableton);
   const activeFile = searchParams.filepath;
   const streamLink = `/api/stream?path=${activeFile}`;

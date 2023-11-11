@@ -1,6 +1,5 @@
 import { execSync } from 'child_process';
 import { ListLink } from '../../components';
-import { usePathname } from '../../helpers';
 
 const commands = [
   { id: 1, command: 'ls' },
@@ -29,7 +28,6 @@ export default function StreamConsole({
 }: {
   searchParams: { commandId: string | undefined };
 }) {
-  const pathname = usePathname();
   const id = parseInt(searchParams.commandId as string);
   const command = commands.find((c) => c.id === id)?.command;
   const output = command ? executeCommandAtPath(command) : '';
@@ -48,7 +46,7 @@ export default function StreamConsole({
         {commands.map((command) => (
           <ListLink
             key={command.id}
-            href={`${pathname}/?commandId=${command.id}`}
+            href={`/run-console/?commandId=${command.id}`}
           >
             {command.command}
           </ListLink>

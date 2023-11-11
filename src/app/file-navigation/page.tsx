@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { usePathname } from '../../helpers';
 import { scanDirectory, FileFolderInfo } from './scan-directory';
 
 const paths = {
@@ -22,12 +21,13 @@ const formatFileSize = (size: number) => {
   return `${size} B`;
 };
 
+const pathname = '/file-navigation';
+
 export default function DiskSpace({
   searchParams,
 }: {
   searchParams: { [key: string]: string | undefined };
 }) {
-  const pathname = usePathname();
   const directory = searchParams.path || rootPath;
   const files = scanDirectory(directory);
 
