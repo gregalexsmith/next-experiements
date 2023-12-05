@@ -42,9 +42,11 @@
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.156.1",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "web-push": "^3.6.6"
   },
   "devDependencies": {
+    "@types/web-push": "^3.6.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",

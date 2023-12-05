@@ -27,6 +27,10 @@ Experiements and learning around Next.js
 
 <img src="/screenshots/file-navigation.png" alt="File Navigation" width="400"/>
 
+### [Push Notifications](./src/app/push-notifications/page.tsx)
+
+<img src="/screenshots/push-notifications.png" alt="Push Notifications" width="400"/>
+
 ### [RSC Streaming](./src/app/rsc-streaming/)
 
 <img src="/screenshots/rsc-streaming.gif" alt="RSC Streaming" width="400"/>

@@ -10,6 +10,7 @@ export default function Home() {
         <ListLink href="/crud-file-db">crud-file-db</ListLink>
         <ListLink href="/file-navigation">file-navigation</ListLink>
         <ListLink href="/info-retrevial">info-retrevial</ListLink>
+        <ListLink href="/push-notifications">push-notifications</ListLink>
         <ListLink href="/react-three-fiber">react-three-fiber</ListLink>
         <ListLink href="/rsc-streaming">rsc-streaming</ListLink>
         <ListLink href="/run-console">run-console</ListLink>
